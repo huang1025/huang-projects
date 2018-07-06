@@ -2,15 +2,33 @@ plugins {
     id 'java'
 }
 
-group 'com.huang'
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+
+// 针对父项目和所有子项目进行通用配置；
+allprojects {
+    group 'com.huang'
+    version '1.0-SNAPSHOT'
+
+    // 全局变量定义
+    ext {
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+// 针对所有子项目进行通用配置；
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven'
+    apply plugin: 'org.sonarqube'     // 应用sonarqube插件
+
 }
