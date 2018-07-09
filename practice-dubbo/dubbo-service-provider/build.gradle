@@ -1,0 +1,5 @@
+
+dependencies {
+    compile project(':practice-dubbo')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
