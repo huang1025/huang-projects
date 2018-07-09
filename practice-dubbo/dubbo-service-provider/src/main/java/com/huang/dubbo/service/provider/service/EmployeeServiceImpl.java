@@ -12,8 +12,10 @@ import java.util.List;
  */
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
-    @Override
-    public List<Employee> getAllEmployees() {
+
+    private List<Employee> list;
+
+    public EmployeeServiceImpl() {
         Employee huang = Employee.builder().age(17).name("huang").id(1).build();
         Employee jiang = Employee.builder().age(17).name("jiang").id(2).build();
         Employee ling = Employee.builder().age(17).name("ling").id(3).build();
@@ -22,16 +24,33 @@ public class EmployeeServiceImpl implements EmployeeService {
         list.add(huang);
         list.add(jiang);
         list.add(ling);
+        this.list = list;
+    }
+
+    @Override
+    public List<Employee> getAllEmployees() {
         return list;
     }
 
     @Override
     public Employee getEmployeeById(Integer id) {
-        return Employee.builder().age(17).name("huang").id(1).build();
+        for (Employee each : list) {
+            if (each.getId().equals(id)) {
+                return each;
+            }
+        }
+        return null;
     }
 
     @Override
     public int updateEmployeeById(Integer id, Employee changedEmployee) {
-        return 1;
+        for (Employee each : list) {
+            if (each.getId().equals(id)) {
+                changedEmployee.setId(id);
+                each = changedEmployee;
+                return 1;
+            }
+        }
+        return 0;
     }
 }
