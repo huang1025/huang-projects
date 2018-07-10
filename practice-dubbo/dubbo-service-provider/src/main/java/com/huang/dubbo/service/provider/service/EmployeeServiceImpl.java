@@ -2,7 +2,7 @@ package com.huang.dubbo.service.provider.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.huang.dubbo.service.api.service.EmployeeService;
-import com.huang.practice.model.Employee;
+import com.huang.practice.base.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

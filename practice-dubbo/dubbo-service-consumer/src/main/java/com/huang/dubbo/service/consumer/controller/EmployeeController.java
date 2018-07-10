@@ -2,7 +2,7 @@ package com.huang.dubbo.service.consumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.huang.dubbo.service.api.service.EmployeeService;
-import com.huang.practice.model.Employee;
+import com.huang.practice.base.Employee;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,4 +1,4 @@
 
 dependencies {
-    compile project(':practice-model')
+    compile project(':practice-base')
 }

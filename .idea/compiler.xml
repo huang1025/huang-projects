@@ -7,6 +7,8 @@
     <bytecodeTargetLevel>
       <module name="dubbo-service-comsumer_main" target="1.8" />
       <module name="dubbo-service-comsumer_test" target="1.8" />
+      <module name="practice-model_main" target="1.8" />
+      <module name="practice-model_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

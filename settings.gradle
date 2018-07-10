@@ -1,10 +1,9 @@
 rootProject.name = 'huang-projects'
+include 'practice-base'
 include 'practice-dubbo'
+include 'practice-dubbo:dubbo-service-api'
+findProject(':practice-dubbo:dubbo-service-api')?.name = 'dubbo-service-api'
 include 'practice-dubbo:dubbo-service-provider'
 findProject(':practice-dubbo:dubbo-service-provider')?.name = 'dubbo-service-provider'
 include 'practice-dubbo:dubbo-service-consumer'
 findProject(':practice-dubbo:dubbo-service-consumer')?.name = 'dubbo-service-consumer'
-include 'practice-dubbo:dubbo-service-api'
-findProject(':practice-dubbo:dubbo-service-api')?.name = 'dubbo-service-api'
-include 'practice-model'
-

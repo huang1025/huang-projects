@@ -1,6 +1,6 @@
 package com.huang.dubbo.service.api.service;
 
-import com.huang.practice.model.Employee;
+import com.huang.practice.base.Employee;
 
 import java.util.List;
 
