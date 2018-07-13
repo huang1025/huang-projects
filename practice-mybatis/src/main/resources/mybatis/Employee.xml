@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.huang.practice.mybatis.mapper.EmployeeMapper">
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id"
+            parameterType="com.huang.practice.base.Employee">
+        INSERT INTO employee (name,age) VALUE (#{name},#{age})
+    </insert>
+
+    <update id="update" parameterType="com.huang.practice.base.Employee">
+        UPDATE employee SET name=#{name},age=#{age} WHERE id=#{id}
+    </update>
+
+    <select id="select" parameterType="int" resultType="com.huang.practice.base.Employee">
+        select * from employee where id=#{id}
+    </select>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM employee WHERE id=#{id}
+    </delete>
+
+</mapper>
