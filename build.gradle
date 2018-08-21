@@ -12,7 +12,9 @@ allprojects {
     }
 
     repositories {
-        mavenCentral()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
     }
 
     sourceCompatibility = 1.8

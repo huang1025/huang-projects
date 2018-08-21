@@ -5,10 +5,28 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dubbo-service-api_main" target="1.8" />
+      <module name="dubbo-service-api_test" target="1.8" />
       <module name="dubbo-service-comsumer_main" target="1.8" />
       <module name="dubbo-service-comsumer_test" target="1.8" />
+      <module name="dubbo-service-consumer_main" target="1.8" />
+      <module name="dubbo-service-consumer_test" target="1.8" />
+      <module name="dubbo-service-provider_main" target="1.8" />
+      <module name="dubbo-service-provider_test" target="1.8" />
+      <module name="huang-projects_main" target="1.8" />
+      <module name="huang-projects_test" target="1.8" />
+      <module name="practice-base_main" target="1.8" />
+      <module name="practice-base_test" target="1.8" />
+      <module name="practice-dubbo_main" target="1.8" />
+      <module name="practice-dubbo_test" target="1.8" />
+      <module name="practice-java_main" target="1.8" />
+      <module name="practice-java_test" target="1.8" />
       <module name="practice-model_main" target="1.8" />
       <module name="practice-model_test" target="1.8" />
+      <module name="practice-mybatis_main" target="1.8" />
+      <module name="practice-mybatis_test" target="1.8" />
+      <module name="practice-spring-boot_main" target="1.8" />
+      <module name="practice-spring-boot_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
