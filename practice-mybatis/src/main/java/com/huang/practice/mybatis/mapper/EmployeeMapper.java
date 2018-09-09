@@ -1,12 +1,10 @@
 package com.huang.practice.mybatis.mapper;
 
 import com.huang.practice.base.Employee;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * Created by huang_jiangling on 2018/7/10.
  */
-@Mapper
 public interface EmployeeMapper {
 
     int insert(Employee employee);
