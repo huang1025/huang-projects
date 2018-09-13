@@ -17,7 +17,7 @@ public class ImportSelectorTest implements ImportSelector {
 
         Set<String> annotationTypes = importingClassMetadata.getAnnotationTypes();
         for (String each : annotationTypes) {
-            System.out.println(each.toString());
+            System.out.println(each);
         }
 
         System.out.println("----------");
